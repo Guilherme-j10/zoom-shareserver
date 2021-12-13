@@ -20,4 +20,4 @@ nameSpace.on('connection', (socket) => {
 
 })
 
-server.listen(3234);
+server.listen(process.env.PORT || 3234);
