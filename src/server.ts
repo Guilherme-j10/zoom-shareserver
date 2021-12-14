@@ -25,7 +25,7 @@ nameSpace.on('connection', (socket) => {
   socket.on('main_peer', (id: string) => {
     socket.broadcast.emit('get_main_peer', id);
   });
-
 })
 
+io.listen(3223);
 server.listen(process.env.PORT || 3234);
